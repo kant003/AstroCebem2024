@@ -1,0 +1,14 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+const teachers = ['Antonio', 'Pepe', 'Angel']
+
+---
+<MainLayout title="Pagina de profes">
+
+    <h1>Listado de profesores</h1>
+    <ul>
+        {teachers.map(teacher => <li>{teacher}</li>)}
+    </ul>
+    
+</MainLayout>
+

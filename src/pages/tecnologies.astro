@@ -1,0 +1,28 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import tecnologies from "../data/tecnologies.json"
+import Tecnology from "../components/Tecnology.astro";
+---
+
+<MainLayout title="Tecnologías web">
+    <h1>Lista de tecnologías web</h1>
+    <main>
+
+        <Tecnology name="AstroJS" description="Framework frontend"/>
+        <Tecnology name="Vue" description="Un framework web"/>
+      
+        {tecnologies.map(tecnology => 
+            <Tecnology name={tecnology.name} 
+            description={tecnology.description}/>
+        )}
+    </main>
+</MainLayout>
+
+<style>
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        gap: 5px;
+    }
+</style>

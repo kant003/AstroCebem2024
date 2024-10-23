@@ -1,0 +1,13 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+
+//http://10.101.11.30:3000/profesores
+    const response = await fetch('http://localhost:3000/profesores')
+    const profesores = await response.json()
+---
+<MainLayout title="Lista de profes ssg">
+<h1>Listado de profesors usando SSG</h1>
+<ul>
+    {profesores.map( profesor => <li>{profesor.nombre}</li>)}
+</ul>
+</MainLayout>

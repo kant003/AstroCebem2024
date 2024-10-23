@@ -1,0 +1,5 @@
+[
+    {"name":"vite", "description":"Empaquetador web"},
+    {"name":"Angular", "description":"Frameword cliente creado por Google"},
+    {"name":"Mysql", "description":"Base de datos relacional"}
+]

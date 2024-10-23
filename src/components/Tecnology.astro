@@ -1,0 +1,15 @@
+---
+const {name, description} = Astro.props
+---
+<section>
+    <div>{name}</div>
+    <p>{description}</p>
+</section>
+
+<style>
+    section{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
